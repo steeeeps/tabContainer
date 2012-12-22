@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>OneMap System Config Tool</title>
+		<meta name="description" content="OneMap分布式安装配置工具.">
+		<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+		
+		<script type="text/javascript" src="js/tabContainer.min.js"></script>
+		<script type="text/javascript">
+
+		window.onload=function(){
+			var num = 1;
+		    tabContainer = new TabContainer(document.getElementById('tabdemo'));
+		    tabContainer.addTab({
+		        title : "Tab" + num,
+		        content : "<p>Tab Content"+num+"</p>",
+		        closable : false
+		    });
+
+		    tabContainer.addTabBtn.onclick = function() {
+		        num++;
+		        tabContainer.addTab({
+		            title : "Tab" + num,
+		            content : "<p>Tab Content"+num+"</p>",
+		            closable : true
+		        });
+		    }
+		};
+		</script>
+	</head>
+	<body>
+		<h1 class="tac mgt10" >tabContainer Demo</h1>
+		<div id="tabdemo" class="tabdemo"></div>		
+	</body>
+</html>
